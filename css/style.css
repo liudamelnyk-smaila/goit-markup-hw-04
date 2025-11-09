@@ -162,6 +162,12 @@
 .about {
     padding: 120px 0;
 }
+.about-icon{
+background-color:  rgba(244, 244, 253, 1);
+width: 264px;
+height: 112px;
+opacity: 1;
+}
 
 .item-about {
     flex-basis: calc((100% - 3 * 24px) / 4);
