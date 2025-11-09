@@ -167,6 +167,11 @@ background-color:  rgba(244, 244, 253, 1);
 width: 264px;
 height: 112px;
 opacity: 1;
+top: 24px;
+left: 100px;
+opacity: 1;
+padding: 24px, 100px;
+
 }
 
 .item-about {
