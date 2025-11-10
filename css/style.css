@@ -52,19 +52,29 @@
 .nav-list {
     display: flex;
     gap: 40px;
-}
-.link {
-    padding: 24px 0; 
-    position: relative;
     color: #404bbf;   
 }
-.nav-list .link {
+.link{
+    padding: 24px 0; 
+    position: relative;
+   
+}
+.nav-list .link-active::after{
+    content: '';
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color:#2e2f42;
     display: block;
+    width: 100%;
+    position: absolute;
+     left: 0;
+     bottom: -1px;
+     height: 4px;
+     background-color: #404bbf;
+     border-radius: 2px;
+     transition:250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .nav a,
 .contact a {
@@ -85,6 +95,7 @@
     font-style: normal;
     color: #434455;
     letter-spacing: 0.02em;
+    transition:color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .contact-link:hover,
 .contact-link:focus {
