@@ -96,8 +96,8 @@
 .main-section {
     padding: 188px 0;
     background-image: linear-gradient( rgba(46, 47, 66, 0.7) ), url("../images/people.jpg");
-    width: 1440;
-    height: 600;
+    width: 1440px;
+    height: 600px;
     top: 72px;
     background-size: cover;
     background-repeat: no-repeat;
@@ -162,22 +162,16 @@
 .about {
     padding: 120px 0;
 }
-.about-icon{
-background-color:  rgba(244, 244, 253, 1);
-width: 264px;
-height: 112px;
-opacity: 1;
-border-radius: 4px;
-border: 1px solid rgba(142, 143, 153, 1)
-}
-
-.svg about-icon  {
-top: 24px;
-left: 100px;
-}
-
 .item-about {
     flex-basis: calc((100% - 3 * 24px) / 4);
+}
+.about-icon{
+    background-color:  rgba(244, 244, 253, 1);
+    width: 264px;
+    height: 112px;
+    opacity: 1;
+    border-radius: 4px;
+    border: 1px solid rgba(142, 143, 153, 1);
 }
 ul {
     padding-left: 0;
@@ -235,7 +229,7 @@ p {
     margin-bottom: 8px;
 }
 .social-link{
-    display: flex;
+    gap: 24px;
     justify-content: center;
     align-items: center;
     width: 40px;
@@ -244,11 +238,19 @@ p {
     border-radius: 50%;
     margin: 0 4px;
     transition: background-color 250ms;
+    display: flex;
+    
 }
 .social-link:hover,
 .social-link:focus {
-    background-color: #404bbf;
-
+    background-color: #404bbf;    
+    
+}
+.social-icon {
+    fill: transparent;
+    width: 16px;
+    height: 16px;
+    transition: stroke 250ms;
 }
 .about-us-list {
     font-family: "Roboto", sans-serif;
