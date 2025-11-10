@@ -198,10 +198,6 @@
     border: 1px solid #8e8f99;
     margin-bottom: 8px;
 }
-
-
-
-
 .icon-box {
    display: flex;
    justify-content: center;
@@ -212,17 +208,10 @@
    border: 1px solid #8E8F99;
    margin-bottom: 8px;
 }
-
-
 .about-icon{
     background-color:  rgba(244, 244, 253, 1);
     border-radius: 4px;
-    border: 1px solid rgba(142, 143, 153, 1);
 }
-
-
-
-
 ul {
     padding-left: 0;
     margin: 0;
