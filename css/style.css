@@ -341,36 +341,31 @@ p {
 .item-portfolio:hover{
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
-.conteiner-images{
-    position: relative;
-    overflow: hidden;
-}
 .portfolio-item-container {
     border: 1px solid #e7e9fc;
     border-top: none;
     padding: 32px 16px;
 }
-
-.portfolio-overlay{
+.img-container {
     position: relative;
     overflow: hidden;
 }
-.text-overlay{
+.overlay-text {
     position: absolute;
     top: 0;
-    font-size: 16px; 
+    font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    color: rgba(244, 244, 253, 1);
+    color: var(--light, #f4f4fd);
     padding: 40px 32px;
-    background-color:rgba(77, 90, 229, 1);
+    background-color: #4d5ae5;
     height: 100%;
     width: 100%;
-    transform: translateY(100%); 
+    transform: translateY(100%);
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.item-portfolio:hover .text-overlay {
-    transform: translateY(0%); 
+.item-portfolio:hover .overlay-text {
+    transform: translateY(0%);
 }
 /*Footer Section-5*/
 .footer {
@@ -385,8 +380,11 @@ p {
     display: flex;
     align-items: baseline;
 }
-.footer-container{
-    margin-right: 120px
+.footer-container {
+    margin-right: 120px;
+    display: flex;
+    align-items: baseline;
+    margin:0 auto;
 }
 .footer-accent{
     color:#F4F4FD;
@@ -407,34 +405,45 @@ p {
     letter-spacing: 0.02em;
     max-width: 264px;
 }
-.footer-copyright{
+.footer-box {
+    margin-right: 120px;
+}
+.social-wrapper {
+    display: flex;
+    flex-direction: column;
+}
+.social-title {
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    color: #FFFFFF;
+    color: var(--white, #ffffff);
     margin-bottom: 16px;
 }
-.footer-social-item{
+.social-list {
+    list-style: none;
     display: flex;
     gap: 16px;
-    margin:0 auto;
-    list-style-type: none;
 }
-.footer-social-links{
-    width: 40px; 
+.social-item-footer {
+    width: 40px;
     height: 40px;
     fill:#f4f4fd;
 }
-.social-links{
+.social-link-footer {
     width: 100%;
     height: 100%;
-    background-color:   #4D5AE5;
-     border-radius: 50%;
+    background-color: #4d5ae5;
+    border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.social-links:hover .social-links:focus {
-     background-color: #31d0aa;
+.social-link-footer:hover,
+.social-link-footer:focus {
+    background-color: #31d0aa;
+}
+.icon-footer {
+    fill: #f4f4fd;
 }
