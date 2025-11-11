@@ -382,6 +382,11 @@ p {
     line-height: 1.17;
     letter-spacing: 0.03em;
     padding: 100px 0;
+    display: flex;
+    align-items: baseline;
+}
+.footer-container{
+    margin-right: 120px
 }
 .footer-accent{
     color:#F4F4FD;
@@ -401,4 +406,35 @@ p {
     line-height: 1.5;
     letter-spacing: 0.02em;
     max-width: 264px;
+}
+.footer-copyright{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #FFFFFF;
+    margin-bottom: 16px;
+}
+.footer-social-item{
+    display: flex;
+    gap: 16px;
+    margin:0 auto;
+    list-style-type: none;
+}
+.footer-social-links{
+    width: 40px; 
+    height: 40px;
+    fill:#f4f4fd;
+}
+.social-links{
+    width: 100%;
+    height: 100%;
+    background-color:   #4D5AE5;
+     border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.social-links:hover .social-links:focus {
+     background-color: #31d0aa;
 }
